@@ -17,7 +17,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                btn_color: '#ff4240',
               }
             }
           }
@@ -32,7 +32,7 @@
 </head>
 <body class="font-font-family">
     <header class="container mx-auto">
-        <nav>
+        <nav class="my-5">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -52,30 +52,132 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>home</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow space-y-5 pl-8 text-lg font-semibold">
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>home</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Pages</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>About</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Blog</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost text-3xl font-bold ">Hockey<span class="text-btn_color">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>home</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
+                  <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                    <li class="hover:text-btn_color transition duration-300 ease-out"><a>home</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Pages</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>About</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Blog</a></li>
+                      <li class="hover:text-btn_color transition duration-300 ease-out"><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
+                <div class="navbar-end space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-6 ">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+                  <a class="btn bg-btn_color text-white text-lg
+                  ">Get Ticket</a>
                 </div>
               </div>
         </nav>
+        <!-- ----------slider section-------- -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full h-[550px]" />
+                  <div class="absolute flex lg:left-14 md:left-8 lg:bottom-32  bottom-10 left-[185px]  space-x-6 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle relative  bg-black text-white ">❮</a>
+                    <a href="#slide2" class="btn btn-circle relative  bg-black text-white ">❯</a>
+                  </div>
+                </div>
+                
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full h-[550px]" />
+                    <div class="absolute flex lg:left-14 md:left-8 lg:bottom-32  bottom-10 left-[185px]  space-x-6 transform justify-between">
+                      <a href="#slide1" class="btn btn-circle relative  bg-black text-white ">❮</a>
+                      <a href="#slide3" class="btn btn-circle relative  bg-black text-white ">❯</a>
+                    </div>
+                  </div>
+
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full h-[550px]" />
+                    <div class="absolute flex lg:left-14 md:left-8 lg:bottom-32  bottom-10 left-[185px]  space-x-6 transform justify-between">
+                      <a href="#slide2" class="btn btn-circle relative  bg-black text-white ">❮</a>
+                      <a href="#slide4" class="btn btn-circle relative  bg-black text-white ">❯</a>
+                    </div>
+                  </div>
+
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full h-[550px]" />
+                    <div class="absolute flex lg:left-14 md:left-8 lg:bottom-32  bottom-10 left-[185px]  space-x-6 transform justify-between">
+                      <a href="#slide3" class="btn btn-circle relative  bg-black text-white ">❮</a>
+                      <a href="#slide1" class="btn btn-circle relative  bg-black text-white ">❯</a>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <!-- ------hockey club seciton------- -->
+         <section>
+            <!-- ----club content---- -->
+             <div class="text-center my-20 space-y-6">
+                <h1 class="text-3xl font-bold">Professional Hockeys Club</h1>
+                <p class="text-lg text-slate-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+             </div>
+             <!-- -------club cart section------ -->
+              <div>
+                <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2 mb-12">
+                    <div>
+                        <div class=" border-8 mb-7 border-red-600 rounded-full mx-auto w-52 p-20 text-xl font-bold">
+                            87%
+                        </div>
+                         <!-- --------cart content -->
+                         <div class="text-center space-y-2">
+                            <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                            <p class="text-slate-700 ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" border-8 mb-7 border-green-600 rounded-full mx-auto w-52 p-20 text-xl font-bold">
+                            87%
+                        </div>
+                         <!-- --------cart content -->
+                         <div class="text-center space-y-2">
+                            <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                            <p class="text-slate-700 ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" border-8 mb-7 border-yellow-600 rounded-full mx-auto w-52 p-20 text-xl font-bold">
+                            87%
+                        </div>
+                         <!-- --------cart content -->
+                         <div class="text-center space-y-2">
+                            <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                            <p class="text-slate-700 ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" border-8 mb-7 border-blue-600 rounded-full mx-auto w-52 p-20 text-xl font-bold">
+                            87%
+                        </div>
+                         <!-- --------cart content -->
+                         <div class="text-center space-y-2">
+                            <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                            <p class="text-slate-700 ">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+         </section>
 
     </header>
 
